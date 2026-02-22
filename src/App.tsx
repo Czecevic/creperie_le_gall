@@ -1,28 +1,78 @@
 import "./App.css";
-import { Menu } from "./components/Menu";
+import { Menu } from "./components/big/Menu";
 import crepe from "./assets/crepe.jpg";
-import { NavBar } from "./components/NavBar";
+import { NavBar } from "./components/medium/NavBar";
+import { Contact } from "./components/big/Contact";
+import { useEffect, useState } from "react";
 
 function App() {
+  const [infoDays, setInfoDays] = useState(false);
+
+  useEffect(() => {
+    const switcher = setInterval(() => {
+      setInfoDays((prev) => !prev);
+    }, 2000);
+    return () => clearInterval(switcher);
+  }, []);
+
   return (
-    <>
+    <div className="max-w-[72rem] mx-auto px-4 sm:px-6 pt-24 sm:pt-28 pb-12 sm:pb-16 min-h-screen">
       <NavBar />
-      <img
-        src={crepe}
-        alt="img_creperie"
-        className="w-full h-auto rounded-lg shadow-lg"
-      />
-      <div>
-        <h1 className="text-2xl font-bold mb-4">Ouvert 7 jours / 7</h1>
-        <h2 className="text-xl font-semibold mb-2">Du Lundi au Samedi</h2>
-        <p className="mb-4">De 11h45 à 22h30</p>
-        <h2 className="text-xl font-semibold mb-2">Le Dimanche</h2>
-        <p>De 11h45 à 22h</p>
+
+      {/* Hero */}
+      <div className="w-full rounded-xl overflow-hidden shadow-[0_4px_6px_-1px_rgba(0,0,0,0.4),0_10px_25px_-5px_rgba(0,0,0,0.35)] border border-border mb-10 sm:mb-12 animate-[fade-in_0.8s_ease-out] [animation-fill-mode:backwards]">
+        <img
+          src={crepe}
+          alt="Crêperie Le Gall"
+          className="w-full h-auto object-cover max-h-[28rem]"
+        />
       </div>
-      {/* Menu */}
-      <span className=" block h-0.5 bg-gray-300 my-4"></span>
+
+      {/* Horaires */}
+      <section className="py-6 sm:py-8 animate-[slide-up_0.6s_ease-out] [animation-fill-mode:backwards] [animation-delay:0.15s]">
+        <div className="bg-surface rounded-xl p-6 sm:p-8 border border-border min-h-[8rem]">
+          <h1 className="font-display text-2xl sm:text-3xl font-semibold text-primary tracking-wide mb-4">
+            Ouvert 7 jours / 7
+          </h1>
+          <div className="min-h-[3.5rem] relative">
+            {infoDays ? (
+              <div key="week" className="animate-[change-in_0.45s_ease-out]">
+                <h2 className="text-lg font-semibold text-primary-dim mb-1">
+                  Du Lundi au Samedi
+                </h2>
+                <p className="text-white/90">De 11h45 à 22h30</p>
+              </div>
+            ) : (
+              <div key="sunday" className="animate-[change-in_0.45s_ease-out]">
+                <h2 className="text-lg font-semibold text-primary-dim mb-1">
+                  Le Dimanche
+                </h2>
+                <p className="text-white/90">De 11h45 à 22h</p>
+              </div>
+            )}
+          </div>
+        </div>
+      </section>
+
+      {/* Séparateur */}
+      <div
+        className="h-px bg-gradient-to-r from-transparent via-border to-transparent my-10 sm:my-12"
+        aria-hidden
+      />
+
       <Menu />
-    </>
+
+      {/* Séparateur */}
+      <div
+        className="h-px bg-gradient-to-r from-transparent via-border to-transparent my-10 sm:my-12"
+        aria-hidden
+      />
+
+      {/* Contact */}
+      <div className="animate-[slide-up_0.6s_ease-out] [animation-fill-mode:backwards] [animation-delay:0.05s]">
+        <Contact />
+      </div>
+    </div>
   );
 }
 

@@ -1,20 +1,105 @@
-:root {
-  --font-primary: "Arial", sans-serif;
-  --font-secondary: "Roboto", sans-serif;
+@import "tailwindcss";
 
-  --color-primary: #f7e08a;
-  --color-secondary: rgb(144, 130, 80);
-  --color-background: rgb(35, 35, 35);
-  --color-accent: #d9c76a;
-  --color-text: rgba(255, 255, 255, 0.87);
+@theme {
+  /* Polices */
+  --font-display: "Playfair Display", Georgia, serif;
+  --font-body: "Source Sans 3", system-ui, sans-serif;
 
-  --spacing-small: 0.5rem;
-  --spacing-medium: 1rem;
-  --spacing-large: 2rem;
+  /* Couleurs crêperie */
+  --color-primary: #e8c547;
+  --color-primary-dim: #c9a83a;
+  --color-surface: #252220;
+  --color-background: #1c1a18;
+  --color-accent: #d4af37;
+  --color-border: rgba(232, 197, 71, 0.25);
+  --color-muted: rgba(255, 255, 255, 0.65);
+}
 
-  --transition-speed: 0.3s;
-  line-height: 1.5;
-  font-weight: 400;
-  color: var(--color-text);
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  line-height: 1.6;
+  color: rgb(255 255 255 / 0.92);
   background-color: var(--color-background);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Keyframes */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slide-up {
+  from {
+    opacity: 0;
+    transform: translateY(1rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-in-left {
+  from {
+    opacity: 0;
+    transform: translateX(-0.75rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Animation à chaque changement de contenu (ex: horaires) */
+@keyframes change-in {
+  from {
+    opacity: 0;
+    transform: translateY(0.5rem) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.15s ease, opacity 0.15s ease;
+}
+
+a:hover {
+  color: var(--color-accent);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
