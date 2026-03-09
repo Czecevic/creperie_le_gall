@@ -9,7 +9,7 @@ export const Contact = () => {
         </h2>
         <p className="text-muted mb-4 max-w-[65ch]">
           Pour toute réservation ou demande d'information, n'hésitez pas à nous
-          contacter :
+          contacter
         </p>
         <ul className="mb-4 space-y-2">
           <LiText name="Téléphone" information="+33 1 23 45 67 89" />
