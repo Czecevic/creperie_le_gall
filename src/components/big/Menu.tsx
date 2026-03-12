@@ -20,15 +20,15 @@ export const Menu = () => {
       </p>
       <div className="flex flex-col items-center gap-6 p-4 sm:p-6 w-full max-w-2xl">
         <SwitchButton onSwitch={onSwitch} setOnSwitch={setOnSwitch} />
-        <ul className="flex flex-col gap-4 w-full">
+        <ul className="flex flex-row flex-wrap items-stretch justify-evenly gap-4 w-full">
           {(onSwitch ? crepeSucre : crepeSale).map((crepe, index) => (
             <li
               key={crepe.name}
-              className="flex items-center gap-4 sm:gap-5 p-3 sm:p-4 rounded-2xl bg-surface border border-border hover:border-primary/40 transition-all duration-300 animate-[slide-in-left_0.4s_ease-out] [animation-fill-mode:backwards]"
+              className="w-1/3 flex items-center gap-4 sm:gap-5 p-3 sm:p-4 rounded-2xl bg-surface border border-border hover:border-primary/40 transition-all duration-300 animate-[slide-in-left_0.4s_ease-out] [animation-fill-mode:backwards]"
               style={{ animationDelay: `${index * 0.06}s` }}
             >
               <img
-                className="w-16 h-16 sm:w-20 sm:h-20 rounded-full object-cover border-2 border-border flex-shrink-0"
+                className="w-16 h-16 sm:w-20 sm:h-20 rounded-full object-cover border-2 border-border shrink-0"
                 src={crepe.image}
                 alt={crepe.name}
               />
@@ -37,7 +37,7 @@ export const Menu = () => {
                   {crepe.name}
                 </h3>
               </div>
-              <p className="font-semibold text-primary flex-shrink-0">
+              <p className="font-semibold text-primary shrink-0">
                 {crepe.price} €
               </p>
             </li>

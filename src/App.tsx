@@ -16,7 +16,7 @@ function App() {
   }, []);
 
   return (
-    <div className="max-w-[72rem] mx-auto px-4 sm:px-6 pt-24 sm:pt-28 pb-12 sm:pb-16 min-h-screen">
+    <div className="max-w-6xl mx-auto px-4 sm:px-6 pt-24 sm:pt-28 pb-12 sm:pb-16 min-h-screen">
       <NavBar />
 
       {/* Hero */}
@@ -24,17 +24,17 @@ function App() {
         <img
           src={crepe}
           alt="Crêperie Le Gall"
-          className="w-full h-auto object-cover max-h-[28rem]"
+          className="w-full h-auto object-cover max-h-112"
         />
       </div>
 
       {/* Horaires */}
       <section className="py-6 sm:py-8 animate-[slide-up_0.6s_ease-out] [animation-fill-mode:backwards] [animation-delay:0.15s]">
-        <div className="bg-surface rounded-xl p-6 sm:p-8 border border-border min-h-[8rem]">
+        <div className="bg-surface rounded-xl p-6 sm:p-8 border border-border min-h-14">
           <h1 className="font-display text-2xl sm:text-3xl font-semibold text-primary tracking-wide mb-4">
             Ouvert 7 jours / 7
           </h1>
-          <div className="min-h-[3.5rem] relative">
+          <div className="min-h-14 relative">
             {infoDays ? (
               <div key="week" className="animate-[change-in_0.45s_ease-out]">
                 <h2 className="text-lg font-semibold text-primary-dim mb-1">
@@ -56,7 +56,7 @@ function App() {
 
       {/* Séparateur */}
       <div
-        className="h-px bg-gradient-to-r from-transparent via-border to-transparent my-10 sm:my-12"
+        className="h-px bg-linear-to-r from-transparent via-border to-transparent my-10 sm:my-12"
         aria-hidden
       />
 
@@ -64,7 +64,7 @@ function App() {
 
       {/* Séparateur */}
       <div
-        className="h-px bg-gradient-to-r from-transparent via-border to-transparent my-10 sm:my-12"
+        className="h-px bg-linear-to-r from-transparent via-border to-transparent my-10 sm:my-12"
         aria-hidden
       />
 
