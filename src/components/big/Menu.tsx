@@ -1,6 +1,4 @@
-import { useState } from "react";
 import { useTranslation } from "react-i18next";
-import { SwitchButton } from "../medium/SwitchButton";
 import { AllCrepes } from "../medium/AllCrepes";
 import { AllStrongDrink } from "../medium/AllStrongDrink";
 
