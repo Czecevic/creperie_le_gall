@@ -8,17 +8,18 @@
   --font-body: "Source Sans 3", system-ui, sans-serif;
 
   /* Couleurs crêperie */
-  --color-primary: #e8c547;
+  --color-primary: #f9a741;
   --color-primary-dim: #c9a83a;
-  --color-surface: #5f7500;
+  --color-surface: #2b4b3c;
+  --color-border: #d32c34;
   --color-background: linear-gradient(
     140deg,
-    rgba(43, 75, 60, 1) 25%,
+    rgba(255, 255, 255, 1) 25%,
     rgba(95, 117, 0, 1) 81%
   );
-  --color-accent: #d4af37;
+  --color-accent: #f9a741;
   --color-border: rgba(232, 197, 71, 0.25);
-  --color-muted: rgba(255, 255, 255, 0.65);
+  --color-muted: rgba(0, 0, 0, 0.85);
 }
 
 *,
@@ -30,13 +31,12 @@
 
 html {
   scroll-behavior: smooth;
+  background: #c4c0af;
 }
 
 body {
   line-height: 1.6;
   color: rgb(255 255 255 / 0.92);
-  background: #2b4b3c;
-  background: var(--color-background);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

@@ -1,12 +1,20 @@
 import "./App.css";
 import { Menu } from "./components/big/Menu";
-import crepe from "./assets/crepe.jpg";
 import { NavBar } from "./components/medium/NavBar";
 import { Contact } from "./components/big/Contact";
 import { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
+
+const imageCount = 6;
+const imageUrls = Array.from(
+  { length: imageCount },
+  (_, i) => new URL(`./assets/image_${i}.jpeg`, import.meta.url).href,
+);
 
 function App() {
   const [infoDays, setInfoDays] = useState(false);
+  const [indexNumb, setIndexNumb] = useState(0);
+  const { t } = useTranslation();
 
   useEffect(() => {
     const switcher = setInterval(() => {
@@ -15,60 +23,53 @@ function App() {
     return () => clearInterval(switcher);
   }, []);
 
+  useEffect(() => {
+    const switchPicture = setInterval(() => {
+      setIndexNumb((prev) => (prev + 1) % imageCount);
+    }, 5000);
+    return () => clearInterval(switchPicture);
+  }, []);
+
   return (
     <div className="max-w-6xl mx-auto px-4 sm:px-6 pt-24 sm:pt-28 pb-12 sm:pb-16 min-h-screen">
       <NavBar />
 
-      {/* Hero */}
       <div className="w-full rounded-xl overflow-hidden shadow-[0_4px_6px_-1px_rgba(0,0,0,0.4),0_10px_25px_-5px_rgba(0,0,0,0.35)] border border-border mb-10 sm:mb-12 animate-[fade-in_0.8s_ease-out] [animation-fill-mode:backwards]">
         <img
-          src={crepe}
+          key={indexNumb}
+          src={imageUrls[indexNumb]}
           alt="Crêperie Le Gall"
-          className="w-full h-auto object-cover max-h-112"
+          className="w-full h-auto object-cover max-h-112 animate-[change-in_0.45s_ease-out]"
         />
       </div>
 
-      {/* Horaires */}
       <section className="py-6 sm:py-8 animate-[slide-up_0.6s_ease-out] [animation-fill-mode:backwards] [animation-delay:0.15s]">
         <div className="bg-surface rounded-xl p-6 sm:p-8 border border-border min-h-14">
           <h1 className="font-display text-2xl sm:text-3xl font-semibold text-primary tracking-wide mb-4">
-            Ouvert 7 jours / 7
+            {t("hours.title")}
           </h1>
           <div className="min-h-14 relative">
             {infoDays ? (
               <div key="week" className="animate-[change-in_0.45s_ease-out]">
-                <h2 className="text-lg font-semibold text-primary-dim mb-1">
-                  Du Lundi au Samedi
+                <h2 className="text-lg font-semibold text-primary mb-1">
+                  {t("hours.weekdays")}
                 </h2>
-                <p className="text-white/90">De 11h45 à 22h30</p>
+                <p className="text-white/90">{t("hours.weekdays_hours")}</p>
               </div>
             ) : (
               <div key="sunday" className="animate-[change-in_0.45s_ease-out]">
-                <h2 className="text-lg font-semibold text-primary-dim mb-1">
-                  Le Dimanche
+                <h2 className="text-lg font-semibold text-primary mb-1">
+                  {t("hours.sunday")}
                 </h2>
-                <p className="text-white/90">De 11h45 à 22h</p>
+                <p className="text-white/90">{t("hours.sunday_hours")}</p>
               </div>
             )}
           </div>
         </div>
       </section>
 
-      {/* Séparateur */}
-      <div
-        className="h-px bg-linear-to-r from-transparent via-border to-transparent my-10 sm:my-12"
-        aria-hidden
-      />
-
       <Menu />
 
-      {/* Séparateur */}
-      <div
-        className="h-px bg-linear-to-r from-transparent via-border to-transparent my-10 sm:my-12"
-        aria-hidden
-      />
-
-      {/* Contact */}
       <div className="animate-[slide-up_0.6s_ease-out] [animation-fill-mode:backwards] [animation-delay:0.05s]">
         <Contact />
       </div>

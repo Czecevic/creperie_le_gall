@@ -1,0 +1,181 @@
+export default {
+  description:
+    "저희 크레페는 달콤한 것부터 짭조름한 것까지, 반죽부터 토핑까지 모두 수제로 만들어집니다. 브르타뉴에서 엄선한 신선한 재료로 타협 없는 정통의 맛을 전달합니다.",
+  menu: {
+    title: "메뉴",
+    sweet: "달콤한",
+    savory: "짭조름한",
+  },
+  crepes: {
+    sucre: [
+      {
+        id: 0,
+        name: "버터, 설탕",
+        description: "반염 버터와 슈거 파우더.",
+        price: 5,
+      },
+      {
+        id: 1,
+        name: "레몬 – 설탕",
+        description: "생레몬즙 + 슈거 파우더 + 반염 버터.",
+        price: 4,
+      },
+      {
+        id: 2,
+        name: "솔티드 카라멜 버터",
+        description: "솔티드 버터 카라멜.",
+        price: 6,
+      },
+      { id: 3, name: "꿀, 호두", description: "꿀과 호두.", price: 5 },
+      {
+        id: 4,
+        name: "딸기 또는 블루베리 잼",
+        description: "딸기 잼 또는 블루베리 잼, 원하시는 대로.",
+        price: 5,
+      },
+      { id: 5, name: "누텔라", description: "누텔라 + 반염 버터.", price: 5 },
+      {
+        id: 6,
+        name: "누텔라, 제철 과일",
+        description: "누텔라 + 반염 버터 + 제철 과일.",
+        price: 5,
+      },
+    ],
+    sale: [
+      {
+        id: 0,
+        name: "L'HENRIETTE",
+        description: "햄 + 에멘탈 치즈 + 달걀.",
+        price: 10,
+      },
+      {
+        id: 1,
+        name: "LA MICHELINE",
+        description: "에멘탈 치즈, 버섯, 토마토 소스.",
+        price: 9,
+      },
+      {
+        id: 2,
+        name: "LA JACOTTE",
+        description: "에멘탈 치즈, 달걀, 베이컨 조각, 양파.",
+        price: 10,
+      },
+      {
+        id: 3,
+        name: "LA MARTINE",
+        description: "르블로숑 치즈, 베이컨 조각, 감자, 크렘 프레슈.",
+        price: 9,
+      },
+      {
+        id: 4,
+        name: "LA PASCALE",
+        description: "에멘탈 치즈, 초리소, 양파, 토마토 소스.",
+        price: 12,
+      },
+      {
+        id: 5,
+        name: "LA JEANNETTE",
+        description: "에멘탈 치즈, 참치, 양파, 토마토 소스.",
+        price: 12,
+      },
+      {
+        id: 6,
+        name: "L'HENRIETTE TOMATÉE",
+        description: "에멘탈 치즈, 햄, 달걀, 토마토 소스.",
+        price: 12,
+      },
+      {
+        id: 7,
+        name: "LA MADELEINE",
+        description: "에멘탈 치즈, 달걀, 버섯, 크렘 프레슈.",
+        price: 12,
+      },
+      {
+        id: 8,
+        name: "LA LUCETTE",
+        description: "에멘탈 치즈, 생햄, 달걀.",
+        price: 12,
+      },
+      {
+        id: 9,
+        name: "LA TIPONETTE",
+        description: "에멘탈 치즈, 브레이즈드 리크, 베이컨 조각.",
+        price: 12,
+      },
+      {
+        id: 10,
+        name: "LA KRISTINETTE",
+        description: "에멘탈 치즈, 브레이즈드 리크, 버섯.",
+        price: 12,
+      },
+      {
+        id: 11,
+        name: "LA PILOUTE",
+        description: "에멘탈 치즈, 시금치, 크림.",
+        price: 12,
+      },
+    ],
+  },
+  boissons: {
+    soda: [
+      { id: 0, name: "케르네 사과 주스", price: 4 },
+      { id: 1, name: "유기농 탄산 사과 주스", price: 4.5 },
+      { id: 2, name: "브레이즈 콜라 33cl", price: 4.5 },
+      { id: 3, name: "브레이즈 콜라 제로 33cl", price: 4.5 },
+      { id: 4, name: "브레이즈 티 33cl", price: 4.5 },
+      { id: 5, name: "브레이즈 시트러스 33cl", price: 4.5 },
+      { id: 6, name: "케르네 드라이 사이다 25cl", price: 4.5 },
+      { id: 7, name: "케르네 스위트 사이다 75cl", price: 13 },
+      { id: 8, name: "케르네 드라이 사이다 75cl", price: 13 },
+    ],
+    digestif: [
+      {
+        id: 0,
+        name: "슈셴 다르모르",
+        desc: "아페리티프 또는 디제스티프로 즐기세요",
+        price: 5,
+      },
+      {
+        id: 1,
+        name: "포모 드 브르타뉴 AOC",
+        desc: "아페리티프로, 또는 달콤한 크레페와 함께",
+        price: 5.5,
+      },
+      { id: 2, name: "티 존느", desc: "브르통 파스티스", price: 4.5 },
+      { id: 3, name: "랑빅 드 브르타뉴 AOC", desc: "사이다 브랜디", price: 6 },
+    ],
+    bieres: [
+      { id: 0, name: "드렘벨, 유기농 메밀 맥주", price: 6.5 },
+      { id: 1, name: "상트 에르반 IPA", price: 6.5 },
+      { id: 2, name: "브리트 블론드 멜렌", price: 6 },
+      { id: 3, name: "브리트 화이트", price: 6 },
+    ],
+    eau: [
+      { id: 0, name: "플랑쿠에 스틸 50cl", price: 4 },
+      { id: 1, name: "플랑쿠에 스틸 1L", price: 5 },
+      { id: 2, name: "플랑쿠에 탄산 50cl", price: 4 },
+      { id: 3, name: "플랑쿠에 탄산 1L", price: 5 },
+    ],
+    boissons_chaudes: [
+      { id: 0, name: "코익 커피, 브르타뉴 로스팅", price: 3 },
+      { id: 1, name: "코익 디카페인, 브르타뉴 로스팅", price: 3 },
+      { id: 2, name: "다만 티", price: 3.5 },
+      { id: 3, name: "따뜻한 우유 추가", price: 1.5 },
+    ],
+  },
+  hours: {
+    title: "주 7일 영업",
+    weekdays: "월요일 ~ 토요일",
+    weekdays_hours: "11시 45분 ~ 22시",
+    sunday: "일요일",
+    sunday_hours: "11시 45분 ~ 17시",
+  },
+  contact: {
+    title: "문의하기",
+    description: "예약이나 문의 사항이 있으시면 언제든지 연락해 주세요",
+    phone: "전화번호",
+    address: "주소",
+    closing:
+      "저희 크레페 가게에서 여러분을 맞이하고 맛있는 크레페를 소개해 드리기를 기대합니다!",
+  },
+};

@@ -11,7 +11,7 @@ export const SwitchButton = ({ onSwitch, setOnSwitch }: SwitchButtonProps) => {
     <button
       type="button"
       onClick={() => setOnSwitch(!onSwitch)}
-      className="inline-flex items-center gap-2 px-5 py-3 rounded-full bg-surface border-2 border-primary/50 text-primary font-semibold uppercase tracking-wide hover:bg-primary/10 hover:border-primary hover:scale-105 active:scale-100 transition-all duration-200"
+      className="inline-flex items-center gap-2 px-5 py-3 rounded-full bg-surface border-2 border-border/50 text-primary font-semibold uppercase tracking-wide hover:bg-primary/10 hover:border-border hover:scale-105 active:scale-100 transition-all duration-200"
     >
       {onSwitch ? (
         <>
