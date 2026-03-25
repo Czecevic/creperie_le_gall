@@ -24,6 +24,13 @@ function App() {
   }, []);
 
   useEffect(() => {
+    imageUrls.forEach((url) => {
+      const img = new Image();
+      img.src = url;
+    });
+  }, []);
+
+  useEffect(() => {
     const switchPicture = setInterval(() => {
       setIndexNumb((prev) => (prev + 1) % imageCount);
     }, 5000);
@@ -34,13 +41,17 @@ function App() {
     <div className="max-w-6xl mx-auto px-4 sm:px-6 pt-24 sm:pt-28 pb-12 sm:pb-16 min-h-screen">
       <NavBar />
 
-      <div className="w-full rounded-xl overflow-hidden shadow-[0_4px_6px_-1px_rgba(0,0,0,0.4),0_10px_25px_-5px_rgba(0,0,0,0.35)] border border-border mb-10 sm:mb-12 animate-[fade-in_0.8s_ease-out] [animation-fill-mode:backwards]">
-        <img
-          key={indexNumb}
-          src={imageUrls[indexNumb]}
-          alt="Crêperie Le Gall"
-          className="w-full h-auto object-cover max-h-112 animate-[change-in_0.45s_ease-out]"
-        />
+      <div className="w-full rounded-xl overflow-hidden shadow-[0_4px_6px_-1px_rgba(0,0,0,0.4),0_10px_25px_-5px_rgba(0,0,0,0.35)] border border-border mb-10 sm:mb-12 relative aspect-[16/9]">
+        {imageUrls.map((url, i) => (
+          <img
+            key={i}
+            src={url}
+            alt={`Crêperie ${i}`}
+            className={`absolute inset-0 w-full h-full object-cover transition-all duration-1000 ease-in-out ${
+              i === indexNumb ? "opacity-100 scale-100" : "opacity-0 scale-95"
+            }`}
+          />
+        ))}
       </div>
 
       <section className="py-6 sm:py-8 animate-[slide-up_0.6s_ease-out] [animation-fill-mode:backwards] [animation-delay:0.15s]">
