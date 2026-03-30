@@ -12,7 +12,7 @@ export const Contact = () => {
         </h2>
         <p className="mb-4 max-w-[65ch]">{t("contact.description")}</p>
         <ul className="mb-4 space-y-2">
-          <LiText name={t("contact.phone")} information="+33 1 23 45 67 89" />
+          <LiText name={t("contact.phone")} information="+33 1 42 92 00 25" />
           <LiText
             name={t("contact.address")}
             information="8 Rue de Hanovre, 75002 Paris"
