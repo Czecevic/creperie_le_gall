@@ -41,7 +41,7 @@ function App() {
     <div className="max-w-6xl mx-auto px-4 sm:px-6 pt-24 sm:pt-28 pb-12 sm:pb-16 min-h-screen">
       <NavBar />
 
-      <div className="w-full rounded-xl overflow-hidden shadow-[0_4px_6px_-1px_rgba(0,0,0,0.4),0_10px_25px_-5px_rgba(0,0,0,0.35)] border border-border mb-10 sm:mb-12 relative aspect-[16/9]">
+      <div className="w-full rounded-xl overflow-hidden shadow-[0_4px_6px_-1px_rgba(0,0,0,0.4),0_10px_25px_-5px_rgba(0,0,0,0.35)] border border-border mb-10 sm:mb-12 relative aspect-video">
         {imageUrls.map((url, i) => (
           <img
             key={i}

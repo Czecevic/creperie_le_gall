@@ -190,6 +190,7 @@ export default {
     description:
       "Para cualquier reserva o consulta, no dude en ponerse en contacto con nosotros",
     phone: "Teléfono",
+    reservation: "Reservar en TheFork",
     address: "Dirección",
     closing:
       "¡Estamos deseando recibirle en nuestra crêperie y hacerle descubrir nuestros deliciosos crepes!",

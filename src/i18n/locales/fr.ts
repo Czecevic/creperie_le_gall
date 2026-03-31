@@ -222,6 +222,7 @@ export default {
     description:
       "Pour toute réservation ou demande d’information, n’hésitez pas à nous contacter.",
     phone: "Téléphone",
+    reservation: "Réserver sur TheFork",
     address: "Adresse",
     closing:
       "Nous sommes impatients de vous accueillir dans notre crêperie et de vous faire découvrir nos délicieuses crêpes !",

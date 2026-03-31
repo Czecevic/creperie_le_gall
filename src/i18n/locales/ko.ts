@@ -174,6 +174,7 @@ export default {
     title: "문의하기",
     description: "예약이나 문의 사항이 있으시면 언제든지 연락해 주세요",
     phone: "전화번호",
+    reservation: "TheFork에서 예약",
     address: "주소",
     closing:
       "저희 크레페 가게에서 여러분을 맞이하고 맛있는 크레페를 소개해 드리기를 기대합니다!",

@@ -169,6 +169,7 @@ export default {
     title: "联系我们",
     description: "如需预订或咨询，欢迎随时联系我们",
     phone: "电话",
+    reservation: "在 TheFork 预订",
     address: "地址",
     closing: "我们期待在可丽饼店迎接您，让您品尝我们美味的可丽饼！",
   },

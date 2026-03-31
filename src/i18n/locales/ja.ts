@@ -191,6 +191,7 @@ export default {
     title: "お問い合わせ",
     description: "ご予約やお問い合わせは、お気軽にご連絡ください",
     phone: "電話番号",
+    reservation: "TheForkで予約",
     address: "住所",
     closing: "クレープリーでみなさまのご来店を心よりお待ちしております！",
   },

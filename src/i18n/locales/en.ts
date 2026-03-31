@@ -186,6 +186,7 @@ export default {
     description:
       "For any reservation or inquiry, feel free to get in touch with us",
     phone: "Phone",
+    reservation: "Book on TheFork",
     address: "Address",
     closing:
       "We look forward to welcoming you to our crêperie and sharing our delicious crêpes with you!",

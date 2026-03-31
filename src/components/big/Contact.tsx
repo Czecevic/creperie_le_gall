@@ -11,6 +11,12 @@ export const Contact = () => {
           {t("contact.title")}
         </h2>
         <p className="mb-4 max-w-[65ch]">{t("contact.description")}</p>
+        <a
+          className="block w-full max-w-80 m-auto mb-2 text-2xl p-1.5 border-2 text-center rounded-xl"
+          href="https://widget.thefork.com/fr/fa86536b-7d92-4c9e-bd19-bfaca8588ec5?step=date&date"
+        >
+          {t("contact.reservation")}
+        </a>
         <ul className="mb-4 space-y-2">
           <LiText name={t("contact.phone")} information="+33 1 42 92 00 25" />
           <LiText
