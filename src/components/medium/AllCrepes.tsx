@@ -16,10 +16,10 @@ export const AllCrepes = () => {
   }) as { id: number; name: string; description: string; price: number }[];
 
   return (
-    <div className="flex flex-col items-center gap-6 w-full">
+    <div className="flex flex-col items-center gap-6 w-full mx-auto px-4 sm:px-6">
       <SwitchButton onSwitch={onSwitch} setOnSwitch={setOnSwitch} />
 
-      <ul className="grid grid-cols-2 gap-3 w-full">
+      <ul className="grid grid-cols-1 md:grid md:grid-cols-2 gap-3 w-full">
         {crepes.map((crepe, index) => (
           <button
             key={crepe.id}

@@ -121,7 +121,13 @@ export default {
       },
       {
         id: 11,
-        name: "LA PILOUTE",
+        name: "LA PIERRETTE",
+        description: "Emmental, goat cheese, honey, walnuts.",
+        price: 12,
+      },
+      {
+        id: 12,
+        name: "LA NICOLE",
         description: "Emmental, spinach, cream.",
         price: 12,
       },

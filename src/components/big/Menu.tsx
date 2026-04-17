@@ -60,22 +60,22 @@ export const Menu = () => {
       <h1 className="text-surface font-semibold text-4xl text-center mt-8 mb-4 w-full border-b-4 border-b-surface">
         Les Boissons Bretonnes{" "}
       </h1>
-      <div className="flex w-full">
-        <div className="bg-surface w-1/3 p-5 m-2 rounded-xl border-border">
+      <div className="flex w-full flex-col md:flex-row">
+        <div className="bg-surface w-full md:w-1/3 p-5 m-2 rounded-xl border-border">
           <AllStrongDrink drinks={sodas} nameDrink={"Sodas"} />
         </div>
-        <div className="bg-surface w-1/3 p-5 m-2 rounded-xl border-border">
+        <div className="bg-surface w-full md:w-1/3 p-5 m-2 rounded-xl border-border">
           <AllStrongDrink drinks={digestifs} nameDrink={"Digestifs"} />
         </div>
-        <div className="bg-surface w-1/3 p-5 m-2 rounded-xl border-border">
+        <div className="bg-surface w-full md:w-1/3 p-5 m-2 rounded-xl border-border">
           <AllStrongDrink drinks={bieres} nameDrink={"Bières / Cides"} />
         </div>
       </div>
-      <div className="flex w-full">
-        <div className="bg-surface w-1/2 p-5 m-2 rounded-xl border-border">
+      <div className="flex w-full flex-col md:flex-row">
+        <div className="bg-surface w-full md:w-1/2 p-5 m-2 rounded-xl border-border">
           <AllStrongDrink drinks={eau} nameDrink={"Eaux"} />
         </div>
-        <div className="bg-surface w-1/2 p-5 m-2 rounded-xl border-border">
+        <div className="bg-surface w-full md:w-1/2 p-5 m-2 rounded-xl border-border">
           <AllStrongDrink
             drinks={boissons_chaudes}
             nameDrink={"Boissons Chaudes"}

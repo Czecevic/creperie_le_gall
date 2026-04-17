@@ -117,8 +117,14 @@ export default {
       },
       {
         id: 11,
-        name: "LA PILOUTE",
-        description: "エメンタールチーズ、ほうれん草、クリーム。",
+        name: "LA PIERRETTE",
+        description: "エメンタール、ヤギのチーズ、はちみつ、くるみ。",
+        price: 12,
+      },
+      {
+        id: 12,
+        name: "LA NICOLE",
+        description: "エメンタール、ほうれん草、クリーム。",
         price: 12,
       },
     ],

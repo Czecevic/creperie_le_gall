@@ -105,8 +105,14 @@ export default {
       },
       {
         id: 11,
-        name: "LA PILOUTE",
-        description: "埃曼塔尔奶酪、菠菜、奶油。",
+        name: "LA PIERRETTE",
+        description: "埃门塔尔奶酪、山羊奶酪、蜂蜜、核桃。",
+        price: 12,
+      },
+      {
+        id: 12,
+        name: "LA NICOLE",
+        description: "埃门塔尔奶酪、菠菜、奶油。",
         price: 12,
       },
     ],

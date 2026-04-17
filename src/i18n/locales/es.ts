@@ -116,8 +116,14 @@ export default {
       },
       {
         id: 11,
-        name: "LA PILOUTE",
-        description: "Emmental, espinacas, nata.",
+        name: "LA PIERRETTE",
+        description: "Emmental, queso de cabra, miel, nueces.",
+        price: 12,
+      },
+      {
+        id: 12,
+        name: "LA NICOLE",
+        description: "Emmental, espinacas, crema.",
         price: 12,
       },
     ],

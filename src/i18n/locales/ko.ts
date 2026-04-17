@@ -110,8 +110,14 @@ export default {
       },
       {
         id: 11,
-        name: "LA PILOUTE",
-        description: "에멘탈 치즈, 시금치, 크림.",
+        name: "LA PIERRETTE",
+        description: "엠멘탈 치즈, 염소 치즈, 꿀, 호두.",
+        price: 12,
+      },
+      {
+        id: 12,
+        name: "LA NICOLE",
+        description: "엠멘탈 치즈, 시금치, 크림.",
         price: 12,
       },
     ],
