@@ -226,9 +226,9 @@ export default {
   hours: {
     title: "연중무휴 (주 7일 영업)",
     weekdays: "월요일부터 토요일까지",
-    weekdays_hours: "11:45 ~ 22:00",
+    weekdays_hours: "11:00 ~ 22:00",
     sunday: "일요일",
-    sunday_hours: "11:45 ~ 17:00",
+    sunday_hours: "11:00 ~ 17:00",
   },
 
   contact: {

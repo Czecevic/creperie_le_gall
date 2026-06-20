@@ -228,9 +228,9 @@ export default {
   hours: {
     title: "Open 7 days a week",
     weekdays: "Monday to Saturday",
-    weekdays_hours: "From 11:45 AM to 10:00 PM",
+    weekdays_hours: "From 11:00 AM to 10:00 PM",
     sunday: "Sunday",
-    sunday_hours: "From 11:45 AM to 5:00 PM",
+    sunday_hours: "From 11:00 AM to 5:00 PM",
   },
 
   contact: {

@@ -223,9 +223,9 @@ export default {
   hours: {
     title: "每周7天营业",
     weekdays: "周一至周六",
-    weekdays_hours: "11:45 至 22:00",
+    weekdays_hours: "11:00 至 22:00",
     sunday: "周日",
-    sunday_hours: "11:45 至 17:00",
+    sunday_hours: "11:00 至 17:00",
   },
 
   contact: {

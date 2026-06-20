@@ -228,9 +228,9 @@ export default {
   hours: {
     title: "Abierto 7 días a la semana",
     weekdays: "De lunes a sábado",
-    weekdays_hours: "De 11h45 a 22h00",
+    weekdays_hours: "De 11h a 22h00",
     sunday: "Los domingos",
-    sunday_hours: "De 11h45 a 17h00",
+    sunday_hours: "De 11h a 17h00",
   },
 
   contact: {

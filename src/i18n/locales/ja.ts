@@ -231,9 +231,9 @@ export default {
   hours: {
     title: "年中無休（週7日営業）",
     weekdays: "月曜日から土曜日まで",
-    weekdays_hours: "11:45 〜 22:00",
+    weekdays_hours: "11:00 〜 22:00",
     sunday: "日曜日",
-    sunday_hours: "11:45 〜 17:00",
+    sunday_hours: "11:00 〜 17:00",
   },
 
   contact: {
